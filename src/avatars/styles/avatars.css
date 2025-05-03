@@ -1,1 +1,43 @@
 /* 여기에 스타일을 구현해 주세요 */
+@import url('./reset.css');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whole-box {
+  padding: 100px;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+
+img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.offline::after,
+.online::after {
+  position: absolute;
+  content: '';
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  bottom: 2px;
+  left: 47px;
+  border: 1.8px solid white;
+}
+
+.online::after {
+  background-color: #4cfe88;
+}
