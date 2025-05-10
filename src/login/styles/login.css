@@ -24,23 +24,25 @@ body {
   border-width: 0;
 }
 
+/* 전체 레이아웃 */
+.all-wrapped {
+  width: 28.75rem;
+  margin: 0 auto;
+}
+
+/* 로고 */
 header {
   margin: 0 auto;
   text-align: center;
 
-  img {
+  svg {
     width: 14.375rem;
     height: 2.75rem;
     margin: 50px 0;
   }
 }
 
-.login-box {
-  width: 460px;
-  height: 216px;
-  margin: 0 auto;
-}
-
+/* 입력 폼 */
 form {
   .input-wrapper {
     margin-bottom: 0.625rem;
@@ -50,28 +52,64 @@ form {
       height: 3rem;
       border: 1px solid var(--silver-light);
       padding: 0.875rem;
+      font-size: var(--font-size-regular);
+    }
+
+    input::placeholder {
+      color: var(--silver);
     }
   }
 
+  /* 버튼 */
   button[type='submit'] {
     width: 28.75rem;
     height: 3.5rem;
-    margin: 10px 0;
+    margin: 0.625rem 0;
+    background: var(--naver-green);
+    border: 1px solid var(--naver-green);
+    color: var(--white);
+    font-size: var(--font-size-regular);
   }
 }
 
+/* 로그인 하단 */
 .security-wrapper {
   position: relative;
+  display: flex;
+
   fieldset {
     border: 0;
     padding: 0;
+    margin: 0;
+  }
+
+  input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--silver);
+    appearance: none;
+    cursor: pointer;
+    margin: 0 0.1875rem 0 0;
+  }
+
+  .checkbox-checked {
+    padding: 0.4em;
+    color: var(--silver);
+  }
+
+  input[type='checkbox']:checked {
+    background: var(--naver-green);
+    color: var(--white);
+    border: none;
+    padding: 0.375rem;
   }
 
   label {
-    width: 7.8125rem;
-    height: 1.5625rem;
+    color: var(--black-dark);
   }
 
+  /* IP 보안 */
   .ip-security {
     width: 4.875rem;
     height: 1.125rem;
@@ -81,6 +119,7 @@ form {
 
     a {
       color: var(--black-dark);
+      padding-right: 0.3125rem;
     }
 
     span {
