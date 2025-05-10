@@ -37,7 +37,6 @@
         <span>ON/OFF</span>
       </div>
     </div> -->
-
     <header>
       <h1 class="sr-only">NAVER</h1>
       <picture>
@@ -46,26 +45,33 @@
         <img src="./../login/preview/images/logo-naver.png" alt="네이버 로고" />
       </picture>
     </header>
-    <form action="#" method="GET">
-      <div>
-        <label for="userId" class="sr-only">아이디</label>
-        <input type="text" id="userId" name="userId" required placeholder="아이디" />
-      </div>
-      <div>
-        <label for="userPassword" class="sr-only">비밀번호</label>
-        <input type="password" id="userPassword" name="userPw" required placeholder="비밀번호" />
-      </div>
-      <button type="submit">로그인</button>
-    </form>
+
     <div>
-      <fieldset>
-        <legend class="sr-only">로그인 상태 유지 여부를 선택해주세요.</legend>
-        <input type="checkbox" id="KeepLoggedIn" name="KeepLoggedIn" />
-        <label for="KeepLoggedIn">로그인 상태 유지</label>
-      </fieldset>
-      <div class="ip-security">
-        <a href="./../login/pages/ip-security.webp" target="_blank" title="IP보안 관련 이미지로 이동">IP보안</a>
-        <span class="ip-status">OFF</span>
+      <div class="login-box">
+        <form action="#" method="GET">
+          <div class="input-wrapper">
+            <label for="userId" class="sr-only">아이디</label>
+            <input type="text" id="userId" name="userId" required placeholder="아이디" />
+          </div>
+          <div class="input-wrapper">
+            <label for="userPassword" class="sr-only">비밀번호</label>
+            <input type="password" id="userPassword" name="userPw" required placeholder="비밀번호" />
+          </div>
+          <button type="submit">로그인</button>
+        </form>
+        <div class="security-wrapper">
+          <div class="security-fieldset-wrapper">
+            <fieldset>
+              <legend class="sr-only">로그인 상태 유지 여부를 선택해주세요.</legend>
+              <input type="checkbox" id="KeepLoggedIn" name="KeepLoggedIn" />
+              <label for="KeepLoggedIn">로그인 상태 유지</label>
+            </fieldset>
+          </div>
+          <div class="ip-security">
+            <a href="./../login/pages/ip-security.webp" target="_blank" title="IP보안 관련 이미지로 이동">IP보안</a>
+            <span class="ip-status">OFF</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>

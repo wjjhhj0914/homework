@@ -1,4 +1,17 @@
 /* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import url(./variables.css);
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -9,4 +22,69 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    width: 14.375rem;
+    height: 2.75rem;
+    margin: 50px 0;
+  }
+}
+
+.login-box {
+  width: 460px;
+  height: 216px;
+  margin: 0 auto;
+}
+
+form {
+  .input-wrapper {
+    margin-bottom: 0.625rem;
+
+    input {
+      width: 28.75rem;
+      height: 3rem;
+      border: 1px solid var(--silver-light);
+      padding: 0.875rem;
+    }
+  }
+
+  button[type='submit'] {
+    width: 28.75rem;
+    height: 3.5rem;
+    margin: 10px 0;
+  }
+}
+
+.security-wrapper {
+  position: relative;
+  fieldset {
+    border: 0;
+    padding: 0;
+  }
+
+  label {
+    width: 7.8125rem;
+    height: 1.5625rem;
+  }
+
+  .ip-security {
+    width: 4.875rem;
+    height: 1.125rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a {
+      color: var(--black-dark);
+    }
+
+    span {
+      color: var(--silver);
+    }
+  }
 }
