@@ -1,1 +1,72 @@
 <!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <!-- 로그인 로고 영역 (NAVER 로고 컴포넌트) -->
+    <!-- <h1 class="sr-only">NAVER</h1>
+      <picture>
+        <source srcset="" type="" />
+        <source srcset="" type="" />
+        <img src="" alt="" />
+      </picture> -->
+
+    <!-- 로그인 입력창 컴포넌트 -->
+    <!-- <label for="formInput-0">레이블</label>
+      <input type="text" id="formInput-0" name="input-name" required placeholder="placeholder" />-->
+
+    <!-- 로그인 버튼 컴포넌트 -->
+    <!-- <button type="submit">버튼</button> -->
+
+    <!-- 로그인 하단 IP 보안 컴포넌트 -->
+    <!-- <div>
+      <fieldset>
+        <legend class="sr-only">설명</legend>
+        <input type="checkbox" id="fieldsetInput" name="fieldsetInput" />
+        <label for="fieldsetInput">input 설명</label>
+      </fieldset>
+      <div>
+        <a href="" target="_blank" title="설명">링크명</a>
+        <span>ON/OFF</span>
+      </div>
+    </div> -->
+
+    <header>
+      <h1 class="sr-only">NAVER</h1>
+      <picture>
+        <source srcset="./../login/preview/images/logo-naver.webp" type="image/webp" />
+        <source srcset="./../login/preview/images/logo-naver.svg" type="image/svg" />
+        <img src="./../login/preview/images/logo-naver.png" alt="네이버 로고" />
+      </picture>
+    </header>
+    <form action="#" method="GET">
+      <div>
+        <label for="userId" class="sr-only">아이디</label>
+        <input type="text" id="userId" name="userId" required placeholder="아이디" />
+      </div>
+      <div>
+        <label for="userPassword" class="sr-only">비밀번호</label>
+        <input type="password" id="userPassword" name="userPw" required placeholder="비밀번호" />
+      </div>
+      <button type="submit">로그인</button>
+    </form>
+    <div>
+      <fieldset>
+        <legend class="sr-only">로그인 상태 유지 여부를 선택해주세요.</legend>
+        <input type="checkbox" id="KeepLoggedIn" name="KeepLoggedIn" />
+        <label for="KeepLoggedIn">로그인 상태 유지</label>
+      </fieldset>
+      <div class="ip-security">
+        <a href="./../login/pages/ip-security.webp" target="_blank" title="IP보안 관련 이미지로 이동">IP보안</a>
+        <span class="ip-status">OFF</span>
+      </div>
+    </div>
+  </body>
+</html>
