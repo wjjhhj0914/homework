@@ -12,3 +12,12 @@
 - [아바타 과제 마크업](./src/avatars/avatars.html)
 - [아바타 과제 마크업 스타일링](./src/avatars/styles/avatars.css)
 - [2주차 회고](./src/md/week2-retrospect.md)
+
+---
+
+- [네이버 로그인 페이지](./src/login/login.html)
+- [3주차 회고](./src/md/week3-retrospect.md)
+
+---
+
+- [Apple 홈페이지]()
