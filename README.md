@@ -21,4 +21,5 @@
 ---
 
 - [Apple 홈페이지](./src/apple/apple.html)
+- [Apple 홈페이지 스타일링](./src/apple/styles/apple.css)
 - [4주차 회고](./src/md/week4-retrospect.md)
