@@ -1,3 +1,120 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+
+/* 카드 컴포넌트 */
+.product-card {
+  height: var(--size);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+
+  /* 배경 이미지 */
+  background-image: url(../products/ipad_pro.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: transform 0.5s ease;
+}
+
+/* 고밀도 디스플레이용 */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .product-card {
+    background-image: url(../products/ipad_pro_2x.webp);
+  }
+}
+
+/* 카드 내용 */
+.product-card__content {
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+
+  /* 카드 제목 - Small Screen 크기 */
+  .product-card__title {
+    font-size: var(--large-text);
+    font-weight: 700;
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  /* 카드 부제목 - Small Screen 크기 */
+  .product-card__subtitle {
+    font-size: var(--base-text);
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  /* 카드 출시일 */
+  .product-card__release-date {
+    font-size: var(--small-text);
+    color: var(--gray);
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  /* 링크 */
+  .product-card__links {
+    display: flex;
+    gap: var(--base-spacing);
+    justify-content: center;
+    margin-block-start: var(--small-spacing);
+
+    /* 링크 - Small Screen 크기 */
+    .product-card__link {
+      color: var(--blue-100);
+      text-decoration: none;
+      border: 1px solid var(--blue-100);
+      border-radius: 100px;
+      font-size: var(--xx-small-text);
+      padding: var(--x-small-spacing) var(--small-spacing);
+      transition: all 0.3s ease;
+
+      /* 링크 hover */
+      &:hover {
+        background: var(--blue-200);
+        color: var(--white);
+        border-color: var(--blue-200);
+      }
+    }
+  }
+
+  .product-card__links a:nth-child(1) {
+    background: var(--blue-100);
+    color: var(--white);
+  }
+}
+
+/* Breakpoint: 1024px 이상 (Large Screen) */
+@media (min-width: 1024px) {
+  .product-card__content {
+    padding: 2rem;
+  }
+
+  .product-card__title {
+    font-size: var(--extra-large-text);
+  }
+
+  .product-card__subtitle {
+    font-size: var(--medium-text);
+  }
+
+  .product-card__link {
+    font-size: var(--xx-small-text);
+  }
+
+  .product-card {
+    background-image: url(../products/ipad_pro_wide.webp);
+  }
+
+  /* 고밀도 디스플레이용 */
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .product-card {
+      background-image: url(../products/ipad_pro_wide_2x.webp);
+    }
+  }
+}
