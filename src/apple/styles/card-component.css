@@ -5,6 +5,7 @@
 /* 카드 컴포넌트 */
 .product-card {
   height: var(--size);
+  width: 100%;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -14,6 +15,7 @@
   color: white;
 
   /* 배경 이미지 */
+
   background-image: url(../products/ipad_pro.webp);
   background-size: cover;
   background-position: center;
@@ -34,7 +36,6 @@
   padding: 1.5rem;
   text-align: center;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 
   /* 카드 제목 - Small Screen 크기 */

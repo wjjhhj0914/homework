@@ -10,7 +10,98 @@
     <link rel="stylesheet" href="./styles/apple.css" />
   </head>
   <body>
-    <!-- 카드 레이아웃 -->
-    <a href="./card-component.html">카드 컴포넌트</a>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="visually-hidden">Apple 제품에 대한 소개를 나열한 내용입니다.</h1>
+      </header>
+      <main>
+        <section class="product-grid">
+          <!-- 카드 레이아웃 -->
+          <!-- 1. iPad Pro -->
+          <article class="product-card ipad-pro" aria-labelledby="iPadProTitle">
+            <div class="product-card__content">
+              <h2 id="iPadProTitle" class="product-card__title">iPad Pro</h2>
+              <p class="product-card__subtitle">놀라우리만치 얇다.<br />엄청나게 강력하다.</p>
+              <p class="product-card__release-date">출시일 추후 공개</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 2. iPad Air -->
+          <article class="product-card ipad-air" aria-labelledby="iPadAirTitle">
+            <div class="product-card__content">
+              <h2 id="iPadAirTitle" class="product-card__title">iPad Air</h2>
+              <p class="product-card__subtitle">두 가지 사이즈. 더 빠른 칩.<br />무엇이든 거뜬하게.</p>
+              <p class="product-card__release-date">출시일 추후 공개</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 3. iPhone 15 Pro -->
+          <article class="product-card iphone-15-pro" aria-labelledby="iPhone15ProTitle">
+            <div class="product-card__content">
+              <h2 id="iPhone15ProTitle" class="product-card__title">iPhone 15 Pro</h2>
+              <p class="product-card__subtitle">티타늄. 초강력. 초경량. 초프로.</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 4. iPhone 15 -->
+          <article class="product-card iphone-15" aria-labelledby="iPhone15Title">
+            <div class="product-card__content">
+              <h2 id="iPhone15Title" class="product-card__title">iPhone 15</h2>
+              <p class="product-card__subtitle">새로운 카메라.<br />새로운 디자인.<br />새로움이 물씬.</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 5. Apple Watch -->
+          <article class="product-card apple-watch" aria-labelledby="appleWatchTitle">
+            <div class="product-card__content">
+              <h2 id="appleWatchTitle" class="product-card__title">WATCH</h2>
+              <p class="product-card__subtitle">보다 똑똑. 보다 또렷. 보다 강력.</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 6. MacBook Air -->
+          <article class="product-card macbook-air" aria-labelledby="macBookAirTitle">
+            <div class="product-card__content">
+              <h2 id="macBookAirTitle" class="product-card__title">MacBook Air</h2>
+              <p class="product-card__subtitle">날렵하게. 강력하게. M3답게.</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+          <!-- 7. AirPods Pro -->
+          <article class="product-card airpods-pro" aria-labelledby="airPodsProTitle">
+            <div class="product-card__content">
+              <h2 id="airPodsProTitle" class="product-card__title">AirPods Pro</h2>
+              <p class="product-card__subtitle">전에 없던 청취 경험.<br />적응형 오디오.</p>
+              <div class="product-card__links">
+                <a href="#" class="product-card__link">더 알아보기</a>
+                <a href="#" class="product-card__link">가격 보기</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <p>© 2023 Apple Inc. All rights reserved.</p>
+        <p>Apple, the Apple logo, iPad, iPhone, MacBook, and AirPods are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+      </footer>
+    </div>
   </body>
 </html>

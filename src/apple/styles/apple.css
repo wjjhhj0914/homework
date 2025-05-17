@@ -1,3 +1,159 @@
-@import "./card-component.css";
+@import './card-component.css';
 
 /* 카드 레이아웃 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 모바일 퍼스트 그리드 레이아웃 - Small Screen */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.ipad-air,
+.iphone-15,
+.macbook-air {
+  color: var(--black);
+}
+
+/* 푸터 */
+.main-footer {
+  text-align: center;
+  margin-block-start: 2rem;
+  padding: 1rem 0;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+/* 각 제품별 배경 이미지 - Small Screen */
+.ipad-air {
+  background-image: url('../products/ipad_air.webp');
+}
+
+.iphone-15-pro {
+  background-image: url('../products/iphone15_pro.webp');
+}
+
+.iphone-15 {
+  background-image: url('../products/iphone15.webp');
+}
+
+.apple-watch {
+  background-image: url('../products/apple_watch.webp');
+}
+
+.macbook-air {
+  background-image: url('../products/macbook_air.webp');
+}
+
+.airpods-pro {
+  background-image: url('../products/airpods_pro.webp');
+}
+
+/* 고밀도 디스플레이용 - Small Screen */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ipad-air {
+    background-image: url('../products/ipad_air_2x.webp');
+  }
+
+  .iphone-15-pro {
+    background-image: url('../products/iphone15_pro_2x.webp');
+  }
+
+  .iphone-15 {
+    background-image: url('../products/iphone15_2x.webp');
+  }
+
+  .apple-watch {
+    background-image: url('../products/apple_watch_2x.webp');
+  }
+
+  .macbook-air {
+    background-image: url('../products/macbook_air_2x.webp');
+  }
+
+  .airpods-pro {
+    background-image: url('../products/airpods_pro_2x.webp');
+  }
+}
+
+/* Breakpoint: 1024px 이상 (Large Screen) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .ipad-pro,
+  .ipad-air,
+  .iphone-15-pro {
+    grid-column: span 2;
+  }
+
+  /* Large Screen용 배경 이미지 - wide */
+  .ipad-pro {
+    background-image: url('../products/ipad_pro_2x.webp');
+  }
+
+  .ipad-air {
+    background-image: url('../products/ipad_air_2x.webp');
+  }
+
+  .iphone-15-pro {
+    background-image: url('../products/iphone15_pro_2x.webp');
+  }
+
+  .iphone15 {
+    background-image: url('../products/iphone15_2x.webp');
+  }
+
+  @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 192dpi) {
+    .ipad-pro {
+      background-image: url('../products/ipad_pro_wide_2x.webp');
+    }
+
+    .ipad-air {
+      background-image: url('../products/ipad_air_wide_2x.webp');
+    }
+
+    .iphone-15-pro {
+      background-image: url('../products/iphone15_pro_wide_2x.webp');
+    }
+
+    .iphone-15 {
+      background-image: url('../products/iphone15_2x.webp');
+    }
+
+    .apple-watch {
+      background-image: url('../products/apple_watch_2x.webp');
+    }
+
+    .macbook-air {
+      background-image: url('../products/macbook_air_2x.webp');
+    }
+
+    .airpods-pro {
+      background-image: url('../products/airpods_pro_2x.webp');
+    }
+  }
+}
